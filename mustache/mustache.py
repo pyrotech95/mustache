@@ -765,7 +765,7 @@ def regulator(f, norm_method, CHRM_SIZE, outdir, bed="",
               res=5000,
               sigma0=1.6,
               s=10,
-			  pt=0.1,
+			        pt=0.1,
               st=0.88,
               octaves=2,
               verbose=True,
@@ -909,8 +909,7 @@ def main():
             distFilter = 2000*res
             print("The distance limit is set to {}bp".format(2000*res))
         else:
-            distFilter = 2000000
-            print("The distance limit is set to 2Mbp")			
+            print("Hi, The distance limit is set to {}bp".format(distFilter))			
     elif distFilter < 200*res:
         print("The distance limit is set to {}bp".format(200*res))
         distFilter = 200*res
