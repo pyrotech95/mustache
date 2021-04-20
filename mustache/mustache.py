@@ -909,7 +909,8 @@ def main():
             distFilter = 2000*res
             print("The distance limit is set to {}bp".format(2000*res))
         else:
-            print("Hi, The distance limit is set to {}bp".format(distFilter))			
+            distFilter = 2000000
+            print("The distance limit is set to 2Mbp")			
     elif distFilter < 200*res:
         print("The distance limit is set to {}bp".format(200*res))
         distFilter = 200*res
