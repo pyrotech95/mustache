@@ -918,8 +918,7 @@ def main():
         print("The distance limit is set to {}bp".format(2000*res))
         distFilter = 2000*res
     elif distFilter > 2000000:
-        distFilter = 2000000
-        print("The distance limit is set to 2Mbp")
+        print("The distance limit is set to {}bp".format(distFilter))
 
     if CHR_COOL_FLAG:
         # extract all the chromosome names big enough to run mustache on
